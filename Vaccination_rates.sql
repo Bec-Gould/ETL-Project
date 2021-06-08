@@ -1,0 +1,17 @@
+CREATE TABLE Vaccination_rates (
+	id SERIAL PRIMARY KEY,
+    "LOCATION" VARCHAR   NOT NULL,
+    "INDICATOR_Child" VARCHAR   NOT NULL,
+    "SUBJECT_Child" VARCHAR   NOT NULL,
+    "MEASURE_Child" VARCHAR   NOT NULL,
+    "TIME" VARCHAR   NOT NULL,
+    "Value_Child" INT   NOT NULL,
+    "INDICATOR_Flu" VARCHAR   NOT NULL,
+	"SUBJECT_Flu" VARCHAR   NOT NULL,
+	"MEASURE_Flu" VARCHAR   NOT NULL,
+	"Value_Flu" INT   NOT NULL
+);
+
+SELECT * FROM vaccination_rates;
+
+DROP TABLE vaccination_rates;
